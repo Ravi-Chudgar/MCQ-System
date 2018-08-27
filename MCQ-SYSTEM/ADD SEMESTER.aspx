@@ -1,0 +1,110 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ADMINMASTER.master" AutoEventWireup="true" CodeFile="ADD SEMESTER.aspx.cs" Inherits="ADD_SEMESTER" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .style2
+        {
+            width: 1200px;
+            background-color: #FFFFCC;
+        }
+    .style3
+    {
+        text-align: center;
+    }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table align="center" cellspacing="1" class="style2">
+        <tr>
+            <td style ="width:300PX">
+                &nbsp;</td>
+            <td style ="width:300PX">
+                &nbsp;</td>
+            <td style ="width:300PX">
+                &nbsp;</td>
+            <td style ="width:300PX">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style ="width:300PX">
+                &nbsp;</td>
+            <td style ="text-align: center; text-decoration: underline; font-style: italic; font-weight: 700;" 
+                colspan="2">
+                ENTER SEMESTER</td>
+            <td style ="width:300PX">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style ="width:300PX">
+                &nbsp;</td>
+            <td style ="width:300PX" class="style3">
+                &nbsp;</td>
+            <td style ="width:300PX" class="style3">
+                &nbsp;</td>
+            <td style ="width:300PX">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style ="width:300PX">
+                &nbsp;</td>
+            <td style ="width:300PX" class="style3">
+                &nbsp;</td>
+            <td style ="width:300PX" class="style3">
+                &nbsp;</td>
+            <td style ="width:300PX">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style ="width:300PX">
+                &nbsp;</td>
+            <td style ="width:300PX" class="style3">
+                SELECT COURCE</td>
+            <td style ="width:300PX" class="style3">
+                <asp:DropDownList ID="DropDownList1" runat="server" 
+                    DataSourceID="SqlDataSource1" DataTextField="C_ID" DataValueField="C_ID" 
+                   >
+                </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                    SelectCommand="SELECT [C_ID] FROM [COURCES]"></asp:SqlDataSource>
+            </td>
+            <td style ="width:300PX">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style ="width:300PX">
+                &nbsp;</td>
+            <td style ="width:300PX" class="style3">
+                ENTER SEMESTER</td>
+            <td style ="width:300PX" class="style3">
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            </td>
+            <td style ="width:300PX">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style ="width:300PX">
+                &nbsp;</td>
+            <td style ="width:300PX" class="style3">
+                &nbsp;</td>
+            <td style ="width:300PX" class="style3">
+                &nbsp;</td>
+            <td style ="width:300PX">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style ="width:300PX">
+                &nbsp;</td>
+            <td style ="width:300PX" class="style3">
+                <asp:Button ID="Button1" runat="server" Text="ADD" onclick="Button1_Click" />
+            </td>
+            <td style ="width:300PX" class="style3">
+                <asp:Button ID="Button2" runat="server" Text="ADD SUBJECT" 
+                    onclick="Button2_Click" />
+            </td>
+            <td style ="width:300PX">
+                &nbsp;</td>
+        </tr>
+    </table>
+</asp:Content>
+

@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ADMINMASTER.master.cs" Inherits="ADMINMASTER" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1200px;
+            background-color:#6699FF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <br />
+        <table align="center" class="style1">
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                        RenderingMode="Table">
+                        <Items>
+                            <asp:MenuItem Text="ADD COURCES" Value="ADD COURCES" 
+                                NavigateUrl="~/ADD COURCES.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="ADD SEMESTER" Value="ADD SEMESTER" 
+                                NavigateUrl="~/ADD SEMESTER.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="ADD SUBJECT" Value="ADD SUBJECT" 
+                                NavigateUrl="~/ADD SUBJECT.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="ADD UNIT" Value="ADD UNIT" NavigateUrl="~/ADD UNIT.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="ADD QUESTION BANK" Value="ADD QUESTION BANK" 
+                                NavigateUrl="~/ADD QUESTION.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="SEE STUDENT" Value="SEE STUDENT"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
